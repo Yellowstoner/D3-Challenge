@@ -83,7 +83,7 @@ return circlesGroup;
 };
 
 // Retrieve data and execute
-d3.csv("../data/data.csv").then(function(USdata, err) {
+d3.csv("assets/data/data.csv").then(function(USdata, err) {
   
   // Parse data
   USdata.forEach(function(data) {
@@ -171,8 +171,7 @@ d3.csv("../data/data.csv").then(function(USdata, err) {
         povertyLabel.classed("active", true).classed("active", false);
       }
     }
+  }).catch(function(error) {
+    console.log(error) 
   })
-}).catch(function(error) {
-  console.log(error)
-  .makeResponsive();
-  d3.select(window).on("resize", makeResponsive)})
+});
