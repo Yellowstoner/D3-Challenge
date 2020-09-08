@@ -120,7 +120,7 @@ d3.csv("assets/data/data.csv").then(function(USdata, err) {
   .attr("opacity", ".5");
   
   // Two x-axis label groups
-  var labelsGroup = chartGroup.append("g").attr("transform", "translate(${widrth / 2}, ${height 20})");
+  var labelsGroup = chartGroup.append("g").attr("transform", "translate(${width / 2}, ${height 20})");
   
   var povertyLabel = labelsGroup.append("text")
   .attr("x", 0)
