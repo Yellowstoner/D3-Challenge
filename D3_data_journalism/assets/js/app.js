@@ -111,7 +111,7 @@ d3.csv("assets/data/data.csv").then(function(USdata, err) {
   
   // Append initial circles
   var circlesGroup = chartGroup.selectAll('circles')
-  .data(censusData)
+  .data(USData)
   .enter()
   .append("circle")
   .attr("cx", d => xLinearScale(d[chosenXAxis]))
